@@ -2,7 +2,7 @@
 
 Install [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint), [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode), and [Format Code Action](https://marketplace.visualstudio.com/items?itemName=rohit-gohri.format-code-action&ssr=false#review-details)
 
-1. `pnpm add -D eslint prettier eslint-config-prettier`
+1. `pnpm add -D eslint prettier eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react-hooks`
 2. Create .prettierrc and add
 
 ```
