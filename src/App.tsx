@@ -1,9 +1,12 @@
-interface Props {}
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react'
 
-export function App(props: Props) {
+import theme from './theme/theme'
+// clean the localstorage if the initial theme is not working
+export function App() {
   return (
-    <>
+    <ChakraProvider>
+      <ColorModeScript initialColorMode={theme.config.initialColorMode} />
       <h2>App</h2>
-    </>
+    </ChakraProvider>
   )
 }
