@@ -39,8 +39,8 @@ module.exports = {
     'plugin:import/recommended',
     'plugin:import/typescript',
     'plugin:jsx-a11y/recommended',
+    'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    'plugin:@typescript-eslint/recommended-requiring-type-checking',
     'standard-with-typescript',
     'prettier'
   ],
@@ -48,16 +48,15 @@ module.exports = {
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true
     },
-    project: true,
-    tsconfigRootDir: __dirname
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: './tsconfig.json'
   },
-  root: true,
   plugins: ['react', '@typescript-eslint'],
+  root: true,
   rules: {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
